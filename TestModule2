@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Stefografy - This is my photography page</title>
+</head>
+<header>Welcome to Stefografy</header>
+<body>
+    <p>Hey guys.
+        This is my home page, made to display my photos
+        that I have taken over the years. Feel free to comment
+        or share. 
+
+        Thanks. Hope you enjoy.
+    </p>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/bio">Bio</a></li>
+        <li><a href="/photos">Photos</a></li>
+        <li><a href="/social">Social Media</a></li>
+    </ul>
+</nav>
+<footer>Stefan Beatović 2024hold all the right to the photos.</footer>
+ - All photos are mine and are taken by me. I </body>
+</html>
