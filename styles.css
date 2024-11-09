@@ -1,0 +1,28 @@
+.color-example {
+    color: green;
+    background-color: gray;
+    border-color: green;
+}
+
+.header-example {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.list-example {
+    color: green;
+    list-style-type: circle;
+}
+
+.text-example {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.div-example {
+    background-color: gray;
+    border: double;
+}
