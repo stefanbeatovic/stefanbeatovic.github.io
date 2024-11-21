@@ -1,125 +1,79 @@
-/* Parent container for article, section, and aside */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>05B - Web Design (coding exercise)</title>
+</head>
+<body>
+    <header>
+        <h1>Serbia's pride</h1>
+        <div class="container">
+            <img src="Belgrade.png" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+              <div class="text">Belgrade, Serbia</div>
+            </div>
+          </div>
+    </header>
 
-main {
-    display: flex;
-    align-items: stretch; /* Ensures all elements are aligned to fill the container */
-    gap: 10px; /* Adds spacing between elements */
-    margin: 20px;
-}
+    <nav>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Novak_Djokovic">Novak Đoković</a></li> |
+            <li><a href="https://en.wikipedia.org/wiki/Belgrade">Belgrade</a></li> |
+            <li><a href="https://en.wikipedia.org/wiki/Nikola_Joki%C4%87">Nikola Jokić</a></li> |
+            <li><a href="https://stefanbeatovic.github.io/index.html">Index</a></li> |
+            <li><a href="https://stefanbeatovic.github.io/second.html">Second</a></li>
+        </ul>
+    </nav>
 
-.left-column {
-    flex: 1; /* Left column takes most of the space */
-    display: flex;
-    flex-direction: column; /* Stacks article and section vertically */
-    gap: 10px; /* Space between article and section */
-}
+    <main>
+        <div class="left-column">
+            <article>
+                <h1>Novak Đoković</h1>
+                <p>Tennis GOAT</p>
+                <p>Novak Djokovic (Serbian: Новак Ђоковић, Novak Đoković, born 22 May 1987) is a Serbian professional tennis player. 
+                    He has been ranked No. 1 for a record total of 428 weeks in a record 13 different years by the ATP, and finished as 
+                    the year-end No. 1 a record eight times. Djokovic has won a record 24 Grand Slam men's singles titles, including a 
+                    record ten Australian Open titles. Overall, he has won 99 singles titles, including a record 72 Big Titles: 24 majors, 
+                    a record 40 Masters, a record seven year-end championships, and an Olympic gold medal. Djokovic is the only man in 
+                    tennis history to be the reigning champion of all four majors at once across three different surfaces. In singles, 
+                    he is the only man to achieve a triple Career Grand Slam, and the only player to complete a Career Golden Masters, 
+                    a feat he has accomplished twice. Djokovic is the only player in singles to have won all of the Big Titles over the 
+                    course of his career, having completed the Career Super Slam as part of that accomplishment.</p>
+            </article>
 
-article {
-    flex: 6; /* Equal width for article and section */
-    background-color: #f1f1f1;
-    padding: 20px;
-}
+            <section>
+                <h1>Belgrade</h1>
+                <p>The most beautiful city in the world.</p>
+                <p>Belgrade (Serbian: Београд, Beograd) is the capital and largest city of Serbia. It is located at the confluence of the 
+                    Sava and Danube rivers and at the crossroads of the Pannonian Plain and the Balkan Peninsula. The population of the 
+                    Belgrade metropolitan area is 1,685,563 according to the 2022 census. It is one of the major cities of Southeast Europe 
+                    and the third most populous city on the Danube river.</p>
 
-section {
-    flex: 6; /* Equal width for article and section */
-    background-color: #f1f1f1;
-    padding: 20px;
-}
+                <p>Belgrade is one of the oldest continuously inhabited cities in Europe and the world.</p>
+            </section>
+        </div>
 
-aside {
-    width: 30%; /* Keeps aside smaller than the other two sections */
-    background-color: lightgray;
-    padding: 20px;
-    margin: 0%;
-}
+        <aside>
+            <h1>Nikola Jokić</h1>
+            <p>Best basketball player in the world.</p>
+            <p>Nikola Jokić (Serbian Cyrillic: Никола Јокић; born February 19, 1995) is a Serbian professional basketball player who is a center 
+                for the Denver Nuggets of the National Basketball Association (NBA). Nicknamed "the Joker", he is widely regarded as one of the 
+                greatest players and centers of all time,[a] and is often considered the greatest draft steal in NBA history. A six-time NBA All-Star, 
+                Jokić has been named to the All-NBA Team on six occasions (including four first-team selections), and won the NBA Most Valuable Player 
+                Award for the 2020–21, 2021–22, and 2023–24 seasons. He represents the Serbian national team, with which he won a silver medal at the 
+                2016 Summer Olympics, and a bronze medal at the 2024 Summer Olympics.</p>
+        </aside>
+    </main>
 
-header {
-    background-color: white;
-    padding: 20px;
-    align-items: stretch; /* Ensures all elements are aligned to fill the container */
-    text-align: center;
-    font-size: 35px;
-    color: black;
-    width: auto;
-}
+    <footer>
+        <h5>© Stefan Beatović 2024</h5>
+    </footer>
+</body>
+</html>
 
-nav {
-    width: auto;
-    background: #ccc;
-    padding: 20px;
-    text-align: center;
-}
-
-li {
-    display: inline;
-}
-
-footer {
-    background-color: #777;
-    padding: 10px;
-    align-items: stretch; /* Ensures all elements are aligned to fill the container */
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    width: auto;
-}
-
-@media (max-width: 600px) {
-    main {
-        flex-direction: column; /* Stack elements on smaller screens */
-    }
-    aside, article, section {
-        width: auto; /* Full-width on small screens */
-    }
-}
-
-img {
-    max-width: 70%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-  
-  .container:hover .image {
-    opacity: 0.1;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
+<! Header image downloaded and imported from internet.>
+<! Novak Đoković, Belgrade and Nikola Jokić info took from Wikipedia and pasted into this document.>
+<! Template used from W3School and modified to my own needs.>
+<! I don't hold no right to any media, text or the template.>
