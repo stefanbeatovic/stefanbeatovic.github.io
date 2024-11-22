@@ -1,0 +1,91 @@
+body {
+    background-color: lightgray;
+  }
+
+h2 {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 15px;
+    background-color: white;
+    margin: 25px 100px 50px 100px;
+  }
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    float: left;
+    width: 50%;
+    column-span: all;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    float: left;
+  }
+
+header {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+.boxes {
+  column-count: 2;
+  column-gap: 30px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  background-color: white;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  height: auto;
+}
+
+img {
+  margin: 0px 10px 0px 10px;
+  
+}
+
+a:visited {
+  color: blue;
+}
+
+a:link {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+figcaption {
+  text-align: center;
+  padding: 5px;
+}
