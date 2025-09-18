@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Debugging Challenge</h1>
+    <script>
+        // This code is broken! Find and fix the errors.
+        let i = 5; // For this section, I noticed immediately that there is no semicolon
+        let j = 10; // Here is the same thing, when we compare to the ones below
+        let k = 25;
+        let l = "Joe"; // The word Jow was not in quotes, as it has to be a string for the code to work
+        const arr = [3, 5, 7];
+
+        if (i < j) {
+            console.log(i); // This meant to be a variable, not a string, so quotes need to be removed
+        } else if (j > k) {
+            console.log(k); // Same here. 
+        } else {
+            console.log(j); // Here almost the same, as there is only one quote, it should be removed
+        }
+
+        for (let q = 0; q <= arr.length; ++q) { // The letter "i" is already in use, so it should be replaced. I used letter q. Also, the loop should run while q < arr.length to avoid going out of bounds.
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+</html>
+
+// Hope this is what you were looking for.
